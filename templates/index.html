@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href ='static/css/style.css'>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Car Price Predictor</title>
+  </head>
+  <body class="bg-dark">
+
+  <div class="container">
+      <div class="row">
+          <div class = "card mt-50" style ="width : 100%; height = 100%">
+              <div class="card-header">
+                  <div class="col-12" style="text-align: center">
+                      <h1>Welcome to Car Price Predictor</h1>
+                  </div>
+              </div>
+
+              <div class="card-body">
+                  <form action="{{ url_for('predict')}}" method="post">
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b> Enter Car Registration Year :</b></label>
+                          <input class="form-control" type="text" id="first" name="year" placeholder="Enter the year">
+                      </div>
+
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b> Enter the Showroom Price of Car (in Lakhs):</b></label>
+                          <input class="form-control" type="text" id="second" name="present_price" placeholder="Enter the price">
+                      </div>
+
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b> Enter the Number of Kilometers travelled: </b></label>
+                          <input class="form-control" type="text" id="third" name="km_driven" placeholder="Enter no the kilometers">
+                      </div>
+
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b> Select the no of Owners previously had</b></label>
+                          <select class = 'selectpicker form-control' id="fourth" name="owners" required="1">
+                              <option>0</option>
+                              <option>1</option>
+                              <option>2</option>
+                          </select>
+                      </div>
+
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b> Select the fuel type of the Car</b></label>
+                          <select class = 'selectpicker form-control' id="fifth" name="fuel_type" required="1">
+                              <option value="Petrol">Petrol</option>
+                              <option value="Diesel">Diesel</option>
+                              <option value="CNG">CNG</option>
+                          </select>
+                      </div>
+
+
+                      <div class="col-10 form-group" style="text-align:center">
+                          <label><b>Are you Dealer or Individual</b></label>
+                          <select class = 'selectpicker form-control' id="sixth" name="select_type_buyer" required="1">
+                              <option value="Dealer">Dealer</option>
+                              <option value="Individual">Individual</option>
+                          </select>
+                      </div>
+
+                       <div class="col-10 form-group" style="text-align:center">
+                          <label><b>Select Transmission Type</b></label>
+                          <select class = 'selectpicker form-control' id="seventh" name="transmission_manual" required="1">
+                              <option value="Manual">Manual</option>
+                              <option value="Automatic">Automatic</option>
+                          </select>
+                      </div>
+                      <br>
+                      <div class="col-10 form-group" style="text-align:center">
+                          <button class="btn btn-primary form-control" type="submit" >Predict Price </button>
+                      </div>
+
+                  </form>
+
+                  <div class="row">
+                      <div class = "col-12" style="text-align:center"></div>
+                      <h3>{{ prediction_text }}</h3>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+
+  </body>
+</html>
