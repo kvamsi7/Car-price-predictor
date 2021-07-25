@@ -8,6 +8,7 @@ your can access the application from <a href='https://car-price-predictor0.herok
 <br>
 <h3> Giving Inputs </h3>
 <br>
+
 ![image](https://user-images.githubusercontent.com/28361738/126913470-14eeb7ef-2cc5-4a0b-850d-d4523adffcc2.png)
 
 <br>
