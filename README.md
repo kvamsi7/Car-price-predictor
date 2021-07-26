@@ -2,12 +2,16 @@
 ![Kaggle](https://img.shields.io/badge/Dataset-Kaggle-blue.svg) ![Python 3.9](https://img.shields.io/badge/Python-3.6-brightgreen.svg) ![scikit-learnn](https://img.shields.io/badge/Library-Scikit_Learn-orange.svg)
 
 
-the Car Price Predictor application is developed to predict the car resale price based on the car's history data 
+* The Car Price Predictor application is developed to predict the car resale price based on the car's history data 
 
-If you want to view the deployed model, click on the following link:<br/>
+* If you want to view the deployed model, click on the following link:<br/>
 
-Deployed at: <a href='https://car-price-predictor0.herokuapp.com/'> Click Here </a>
+    - Deployed at: <a href='https://car-price-predictor0.herokuapp.com/'> Click Here </a>
 <!-- your can access the application from <a href='https://car-price-predictor0.herokuapp.com/'> here </a> -->
+
+* If you found interesting and useful, please leave a ⭐ to the repository 😊.
+
+* A glimpse of the web app:
 
 ![image](https://user-images.githubusercontent.com/28361738/126913438-e8aca48f-e66e-49c6-b98d-ea8aceb5b7a2.png)
 
