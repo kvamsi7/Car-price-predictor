@@ -1,5 +1,5 @@
 # Car-price-predictor
-the Car Price Predictor application is developed to predict the car resale price based on the provided inputs
+the Car Price Predictor application is developed to predict the car resale price based on the car's history data 
 
 your can access the application from <a href='https://car-price-predictor0.herokuapp.com/'> here </a> 
 
